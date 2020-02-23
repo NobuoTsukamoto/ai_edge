@@ -1,5 +1,5 @@
 # AI Edge Model Zoo
-このリポジトリは**AI EDGE CONTEST OPEN DATA PORTAL**を利用したモデルを公開します。<br>特にモバイルやEdge Device（[Google Coral Edge TPU](https://coral.ai/) , [NVIDIA Jetson](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/), [Raspberry Pi](https://www.raspberrypi.org/), など)で動作するモデルについて公開します。
+このリポジトリは**AI EDGE CONTEST OPEN DATA**を利用したモデルを公開します。<br>特にモバイルやEdge Device（[Google Coral Edge TPU](https://coral.ai/) , [NVIDIA Jetson](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/), [Raspberry Pi](https://www.raspberrypi.org/), など)で動作するモデルについて公開します。
 
 # Models
 - [Detection](detection)
