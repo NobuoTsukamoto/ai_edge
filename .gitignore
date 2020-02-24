@@ -16,5 +16,7 @@ detection/models
 detection/fine_tune_checkpoint
 segmantation/data
 segmantation/download
+segmantation/models
 
 *.zip
+.ipynb_checkpoints
