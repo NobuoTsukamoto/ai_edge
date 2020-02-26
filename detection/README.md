@@ -5,7 +5,7 @@
 # Model Zoo
 
 Model and Latency.
-|Model Name|RasPi4<br>+EdgeTPU (USB3.0)|Jetson Nano(TF-TRT)|RasPi4(TF-Lite)|
+|Model Name|RasPi4<br>+EdgeTPU (USB3.0)|Jetson Nano<br>(TF-TRT)|RasPi4<br>(TF-Lite)|
 |:--|--:|--:|--:|
 |ssdlite_mobilenet_v3_small_320x320|-|0|0|
 |ssdlite_mobilenet_v3_large_320x320|-|0|0|
