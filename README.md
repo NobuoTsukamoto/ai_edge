@@ -9,6 +9,9 @@ Comming soon!
 
 # References
 - [AI EDGE CONTEST OPEN DATA PORTAL](https://signate.jp/dlp/ai-edge-contest-data)
+- [Google Coral Edge TPU](https://coral.ai/)
+- [NVIDIA JETSON NANO](https://www.nvidia.com/ja-jp/autonomous-machines/embedded-systems/jetson-nano/)
+- [PINTO0309/TensorflowLite-bin](https://github.com/PINTO0309/TensorflowLite-bin)<br>("Prebuilt binary for TensorflowLite's standalone installer. Fast tuning with MultiTread. For RaspberryPi." Thank you!)
 
 # 利用データについて
 

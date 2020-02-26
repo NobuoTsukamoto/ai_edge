@@ -1,4 +1,4 @@
-# Training the models
+# Training the model
 
 # Installation
 HW requirements
@@ -66,7 +66,7 @@ ai_edge
 Config files are *ai_edge/detection/config*. Change the path according to your environment.
 
 # Training models
-(models/research directory)
+(Run in the models / research directory.)
 ## SSDLite MobileNet EdgeTPU Quant Model
 ### Training
 Fine-tuning checkpoint: [ssd_mobilenet_edgetpu_coco](https://storage.cloud.google.com/mobilenet_edgetpu/checkpoints/ssdlite_mobilenet_edgetpu_coco_quant.tar.gz)

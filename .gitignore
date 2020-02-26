@@ -1,22 +1,19 @@
 # Ignore directory
 detection/data
 detection/cocoapi
-detection/config
-detection/ssdlite_mobilenet_edgetpu_320x320_ai_edge
-detection/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant
-detection/ssdlite_mobilenet_v3_large_320x320_ai_edge
-detection/ssdlite_mobilenet_v3_small_320x320_ai_edge
+detection/ssdlite_*
 detection/tf_recode
-detection/train_ssdlite_mobilenet_edgetpu_320x320_ai_edge
-detection/train_ssdlite_mobilenet_edgetpu_320x320_ai_edge
-detection/train_ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant
-detection/train_ssdlite_mobilenet_v3_large_320x320_ai_edge
-detection/train_ssdlite_mobilenet_v3_small_320x320_ai_edge
+detection/train_*
 detection/models
 detection/fine_tune_checkpoint
 segmantation/data
 segmantation/download
 segmantation/models
+segmantation/eval_deeplabv3_mnv2
+segmantation/fine_tune_checkpoint
+segmantation/train_*
+segmantation/viz_*
 
 *.zip
 .ipynb_checkpoints
+*.pdf
