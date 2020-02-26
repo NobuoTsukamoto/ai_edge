@@ -9,7 +9,7 @@ Model and Latency.
 |:--|--:|--:|--:|
 |ssdlite_mobilenet_v3_small_320x320|-|0|0|
 |ssdlite_mobilenet_v3_large_320x320|-|0|0|
-ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant|8 ms [*1]<br>11 ms [*2]|-|-|
+[ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant](https://drive.google.com/open?id=1DPjrqAQGJbUZvOFrSCakIJ34H82hMw0c)|8 ms [*1]<br>11 ms [*2]|-|-|
 
 [*1] libedgetpu: libedgetpu1-max (maximum operating frequency)<br>
 [*2] libedgetpu: libedgetpu1-std (normal operating frequency)<br>
