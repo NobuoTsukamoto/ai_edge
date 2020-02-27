@@ -5,10 +5,10 @@
 # Model Zoo
 
 Model and Latency.
-|Model Name|RasPi4<br>+EdgeTPU (USB3.0)|Jetson Nano<br>(TF-TRT)|RasPi4<br>(TF-Lite)|
+|Model Name|RasPi4<br>+EdgeTPU (USB3.0)|Jetson Nano<br>TF-TRT FP16|RasPi4<br>TF-Lite|
 |:--|--:|--:|--:|
-|ssdlite_mobilenet_v3_small_320x320|-|0|0|
-|ssdlite_mobilenet_v3_large_320x320|-|0|0|
+|ssdlite_mobilenet_v3_small_320x320|-|24 ms|0|
+|ssdlite_mobilenet_v3_large_320x320|-|41 ms|0|
 [ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant](https://drive.google.com/open?id=1DPjrqAQGJbUZvOFrSCakIJ34H82hMw0c)|8 ms [*1]<br>11 ms [*2]|-|-|
 
 [*1] libedgetpu: libedgetpu1-max (maximum operating frequency)<br>
