@@ -1,10 +1,10 @@
 # SSDLite MobileNet EdgeTPU Quant Model
-## Training
-Fine-tuning checkpoint: [ssd_mobilenet_edgetpu_coco](https://storage.cloud.google.com/mobilenet_edgetpu/checkpoints/ssdlite_mobilenet_edgetpu_coco_quant.tar.gz)
+## Training ([Quantization-aware training](https://github.com/tensorflow/tensorflow/tree/r1.15/tensorflow/contrib/quantize))
+Fine-tuning checkpoint: [ssdlite_mobilenet_edgetpu_320x320_ai_edge]()
 ```
 $ PIPELINE_CONFIG_PATH=PATH_TO/ai_edge/detection/config/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant.config
 $ MODEL_DIR=PATH_TO/ai_edge/detection/train_ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/
-$ NUM_TRAIN_STEPS=350000
+$ NUM_TRAIN_STEPS=50000
 $ SAMPLE_1_OF_N_EVAL_EXAMPLES=1
 $ python object_detection/model_main.py \
     --pipeline_config_path=${PIPELINE_CONFIG_PATH} \
@@ -16,7 +16,7 @@ $ python object_detection/model_main.py \
 ## Frozen graph
 ```
 $ INPUT_TYPE=image_tensor
-$ TRAINED_CKPT_PREFIX=PATH_TO/ai_edge/detection/train_ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/model.ckpt-350000
+$ TRAINED_CKPT_PREFIX=PATH_TO/ai_edge/detection/train_ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/model.ckpt-50000
 $ EXPORT_DIR=PATH_TO/ai_edge/detection/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant
 $ python object_detection/export_inference_graph.py \
     --input_type=${INPUT_TYPE} \
@@ -38,7 +38,7 @@ $ python object_detection/export_tflite_ssd_graph.py \
 ## TF-Lite convert (Full integer quantization Model)
 ```
 $ tflite_convert \
-  --output_file="${OUTPUT_DIR}/output_tflite_graph.tflite" \
+  --output_file="${OUTPUT_DIR}/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant.tflite" \
   --graph_def_file="${OUTPUT_DIR}/tflite_graph.pb" \
   --inference_type=QUANTIZED_UINT8 \
   --input_arrays="normalized_input_image_tensor" \
@@ -49,12 +49,9 @@ $ tflite_convert \
   --change_concat_input_ranges=false \
   --allow_nudging_weights_to_use_fast_gemm_kernel=true \
   --allow_custom_op
-
-# Rename tflite model.
-$ cd ${OUTPUT_DIR}
-$ mv ./output_tflite_graph.tflite ./ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant.tflite
   ```
-  ### Convert Edge TPU Model
+
+  ## Compile Edge TPU Model
   ```
   $ edgetpu_compiler -s -m 13 ./ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant.tflite
   ```
