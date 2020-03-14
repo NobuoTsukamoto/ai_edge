@@ -3,7 +3,7 @@
 - [Training models](g3doc/how_to_training_models.md)
 
 # Model Zoo
-|Model Name|TF-TRT FP16|TF-Lite|TF-Lite float16 quant|TF-Lite integer quant|TF-Lite EdgeTPU|
+|Model Name|TF-TRT FP16|TF-Lite|TF-Lite<br>float16<br>quant|TF-Lite<br>integer<br>quant|TF-Lite<br>EdgeTPU|
 |:--|:--|:--|:--|:--|:--|
 |ssd_mobilenet_v2_300x300|Yes|No|Yes|No|No|
 |ssd_mobilenet_v2_300x300_quant|No|No|No|Yes|Yes|
@@ -16,8 +16,8 @@
 # Model and Latency.
 
 ## Raspberry Pi 4 
-|Model Name|TF-Lite|Float16<br>quant|Int quant|EdgeTPU|
-|:--|--:|--:|--:|--:|--:|
+|Model Name|TF-Lite|Float16<br>quant|Intger<br>quant|EdgeTPU|
+|:--|--:|--:|--:|--:|
 |ssd_mobilenet_v2_300x300|ms|ms|-|-|
 |ssd_mobilenet_v2_300x300_quant|-|-|ms|ms|
 |ssdlite_mobilenet_v3_small_320x320|70 ms|ms|-|-|
