@@ -13,7 +13,11 @@ segmantation/eval_deeplabv3_mnv2
 segmantation/fine_tune_checkpoint
 segmantation/train_*
 segmantation/viz_*
+segmantation/eval_*
+segmantation/tpu_voc
+segmantation/v2_voc
 
 *.zip
 .ipynb_checkpoints
 *.pdf
+*.mp4

@@ -1,6 +1,5 @@
 # Training the model
 
-# 
 - [Installation](install_tensorflow_object_detection_api.md)
 
 # Prepare dataset
@@ -50,7 +49,8 @@ ai_edge
 Config files are *ai_edge/detection/config*. Change the path according to your environment.
 
 # Training models
-- [SSDLite MobileNet EdgeTPU Quant Model](training_ssdlite_mobilenet_edgetpu_quant.md)
+- [SSDLite MobileNet EdgeTPU Model](training_ssdlite_mobilenet_edgetpu.md)
+- [SSDLite MobileNet EdgeTPU quant Model](training_ssdlite_mobilenet_edgetpu_quant.md)
 - [SSDLite MobileNet v3 small Model](training_ssdlite_mobilenet_v3_small.md)
 - [SSDLite MobileNet v3 large Model](training_ssdlite_mobilenet_v3_large.md)
 

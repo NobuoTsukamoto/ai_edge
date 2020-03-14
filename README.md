@@ -3,7 +3,7 @@
 
 # Models
 - [Detection](detection)
-- [Segmantation (Comming soon!)](segmantation)
+- [Segmentation (Comming soon!)](segmantation)
 
 # References
 - [AI EDGE CONTEST OPEN DATA PORTAL](https://signate.jp/dlp/ai-edge-contest-data)

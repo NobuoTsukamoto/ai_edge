@@ -1,6 +1,6 @@
 # SSDLite MobileNet EdgeTPU Quant Model
 ## Training ([Quantization-aware training](https://github.com/tensorflow/tensorflow/tree/r1.15/tensorflow/contrib/quantize))
-Fine-tuning checkpoint: [ssdlite_mobilenet_edgetpu_320x320_ai_edge]()
+Fine-tuning checkpoint: [ssdlite_mobilenet_edgetpu_320x320_ai_edge](https://drive.google.com/open?id=1_E3sc8JwDtWdKMGvPzqvsDPF4K12S0O9)
 ```
 $ PIPELINE_CONFIG_PATH=PATH_TO/ai_edge/detection/config/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant.config
 $ MODEL_DIR=PATH_TO/ai_edge/detection/train_ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/
@@ -28,7 +28,7 @@ $ python object_detection/export_inference_graph.py \
 ```
 $ CONFIG_FILE=PATH_TO/ai_edge/detection/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/pipeline.config
 $ CHECKPOINT_PATH=PATH_TO/ai_edge/detection/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/model.ckpt
-$ OUTPUT_DIR=OUTPUT_DIR=PATH_TO/ai_edge/detection/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/tflite_model
+$ OUTPUT_DIR=PATH_TO/ai_edge/detection/ssdlite_mobilenet_edgetpu_320x320_ai_edge_quant/tflite_model
 $ python object_detection/export_tflite_ssd_graph.py \
     --pipeline_config_path=$CONFIG_FILE \
     --trained_checkpoint_prefix=$CHECKPOINT_PATH \
