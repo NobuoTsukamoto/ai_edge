@@ -5,25 +5,26 @@
 # Model Zoo
 |Model Name|TF-TRT FP16|TF-Lite|TF-Lite<br>float16<br>quant|TF-Lite<br>integer<br>quant|TF-Lite<br>EdgeTPU|
 |:--|:--|:--|:--|:--|:--|
-|ssd_mobilenet_v2_300x300|Yes|No|Yes|No|No|
-|ssd_mobilenet_v2_300x300_quant|No|No|No|Yes|Yes|
-|[ssdlite_mobilenet_v3_small_320x320](https://drive.google.com/open?id=1yjjMwJxLglShaurTuHwsYjtaXj2T9dur)|Yes|No|Yes|No|No|
-|[ssdlite_mobilenet_v3_large_320x320](https://drive.google.com/open?id=152_iyi4tZCieL4RHqwDzBJfZMaMUdPWU)|Yes|No|Yes|No|No|
-|[ssdlite_mobilenet_edgetpu_320x320](https://drive.google.com/open?id=1_E3sc8JwDtWdKMGvPzqvsDPF4K12S0O9)|No|No|No|Yes|Yes|
+|ssd_mobilenet_v2_300x300|No|No|No|No|No|
+|ssd_mobilenet_v2_300x300_quant|No|No|No|No|No|
+|[ssdlite_mobilenet_v3_small_320x320](https://drive.google.com/open?id=1yjjMwJxLglShaurTuHwsYjtaXj2T9dur)|Yes|Yes|Yes|No|No|
+|[ssdlite_mobilenet_v3_large_320x320](https://drive.google.com/open?id=152_iyi4tZCieL4RHqwDzBJfZMaMUdPWU)|Yes|Yes|Yes|No|No|
+|[ssdlite_mobilenet_edgetpu_320x320](https://drive.google.com/open?id=1_E3sc8JwDtWdKMGvPzqvsDPF4K12S0O9)|Yes|Yes|Yes|No|No|
 |[ssdlite_mobilenet_edgetpu_320x320_quant](https://drive.google.com/open?id=1ZoUmySJZBorN7r5-5cd96vPX683bSARN)|No|No|No|Yes|Yes|
 
 
 # Model and Latency.
 
 ## Raspberry Pi 4 
+Note: links are youtube url.
 |Model Name|TF-Lite|Float16<br>quant|Intger<br>quant|EdgeTPU|
 |:--|--:|--:|--:|--:|
 |ssd_mobilenet_v2_300x300|ms|ms|-|-|
 |ssd_mobilenet_v2_300x300_quant|-|-|ms|ms|
-|ssdlite_mobilenet_v3_small_320x320|70 ms|ms|-|-|
-|ssdlite_mobilenet_v3_large_320x320|209 ms|ms|-|-|
-|ssdlite_mobilenet_edgetpu_320x320|553 ms|ms|-|-|
-|ssdlite_mobilenet_edgetpu_320x320_quant|-|-|125 ms|8 ms [*1]<br>11 ms [*2]|
+|ssdlite_mobilenet_v3_small_320x320|[70 ms](https://youtu.be/MGd_jIkaZ3E)|ms|-|-|
+|ssdlite_mobilenet_v3_large_320x320|[209 ms](https://youtu.be/UweTO9GcCzM)|ms|-|-|
+|ssdlite_mobilenet_edgetpu_320x320|[553 ms](https://youtu.be/GnWSc0XF2IA)|ms|-|-|
+|ssdlite_mobilenet_edgetpu_320x320_quant|-|-|[125 ms](https://youtu.be/aLzk4xlsyqA)|[8 ms](https://youtu.be/fHVE7uv48wg) [*1]<br>11 ms [*2]|
 
 [*1] libedgetpu: libedgetpu1-max (maximum operating frequency)<br>
 [*2] libedgetpu: libedgetpu1-std (normal operating frequency)<br>
