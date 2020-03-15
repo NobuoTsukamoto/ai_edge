@@ -33,9 +33,9 @@ Note: links are youtube url.
 |Model Name|TF-TRT 16|
 |:--|--:|
 |ssd_mobilenet_v2_300x300|- [*3]|
-|ssdlite_mobilenet_v3_small_320x320|24 ms|
-|ssdlite_mobilenet_v3_large_320x320|41 ms|
-|ssdlite_mobilenet_edgetpu_320x320|38 ms|
+|ssdlite_mobilenet_v3_small_320x320|[24 ms](https://youtu.be/6rvksX_3SX0)|
+|ssdlite_mobilenet_v3_large_320x320|[41 ms](https://youtu.be/yNc51WBM4X)|
+|ssdlite_mobilenet_edgetpu_320x320|[38 ms](https://youtu.be/sOEp8RpWgSA)|
 
 [*3] Convert tf-trt fp16 model (wit force nms cpu) is failed. please check [my blog post](https://nextremer-nbo.blogspot.com/2020/02/jetson-nanotf-trtjetpack43.html). 
 
