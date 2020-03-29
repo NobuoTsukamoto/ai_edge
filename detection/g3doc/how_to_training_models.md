@@ -50,7 +50,9 @@ Config files are *ai_edge/detection/config*. Change the path according to your e
 
 # Training models
 - [SSDLite MobileNet EdgeTPU Model](training_ssdlite_mobilenet_edgetpu.md)
-- [SSDLite MobileNet EdgeTPU quant Model](training_ssdlite_mobilenet_edgetpu_quant.md)
+- [SSDLite MobileNet EdgeTPU Integer quant Model](training_ssdlite_mobilenet_edgetpu_quant.md)
 - [SSDLite MobileNet v3 small Model](training_ssdlite_mobilenet_v3_small.md)
 - [SSDLite MobileNet v3 large Model](training_ssdlite_mobilenet_v3_large.md)
+- [SSD MobileNet v2 Model](training_ssd_mobilenet_v2.md)
+- [SSD MobileNet v2 Integer Quant Model](training_ssd_mobilenet_v2_quant.md)
 

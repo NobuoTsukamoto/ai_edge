@@ -1,6 +1,7 @@
 # Ignore directory
 detection/data
 detection/cocoapi
+detection/ssd_*
 detection/ssdlite_*
 detection/tf_recode
 detection/train_*
@@ -21,3 +22,4 @@ segmantation/v2_voc
 .ipynb_checkpoints
 *.pdf
 *.mp4
+*.tar.gz

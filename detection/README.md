@@ -5,8 +5,8 @@
 # Model Zoo
 |Model Name|TF-TRT FP16|TF-Lite|TF-Lite<br>float16<br>quant|TF-Lite<br>integer<br>quant|TF-Lite<br>EdgeTPU|
 |:--|:--|:--|:--|:--|:--|
-|ssd_mobilenet_v2_300x300|No|No|No|No|No|
-|ssd_mobilenet_v2_300x300_quant|No|No|No|No|No|
+|[ssd_mobilenet_v2_300x300](https://drive.google.com/open?id=1l-WvKXl-VLQt6VRUZHQC7ET8f_60jckK)|No|No|No|Yes|Yes|
+|[ssd_mobilenet_v2_300x300_quant](https://drive.google.com/open?id=1C02vJUCn3LebJ6oZi5usT__FO2-pCFF4)|Yes|Yes|Yes|No|No|
 |[ssdlite_mobilenet_v3_small_320x320](https://drive.google.com/open?id=1yjjMwJxLglShaurTuHwsYjtaXj2T9dur)|Yes|Yes|Yes|No|No|
 |[ssdlite_mobilenet_v3_large_320x320](https://drive.google.com/open?id=152_iyi4tZCieL4RHqwDzBJfZMaMUdPWU)|Yes|Yes|Yes|No|No|
 |[ssdlite_mobilenet_edgetpu_320x320](https://drive.google.com/open?id=1_E3sc8JwDtWdKMGvPzqvsDPF4K12S0O9)|Yes|Yes|Yes|No|No|
@@ -19,8 +19,8 @@
 Note: links are youtube url.
 |Model Name|TF-Lite|Float16<br>quant|Intger<br>quant|EdgeTPU|
 |:--|--:|--:|--:|--:|
-|ssd_mobilenet_v2_300x300|ms|ms|-|-|
-|ssd_mobilenet_v2_300x300_quant|-|-|ms|ms|
+|ssd_mobilenet_v2_300x300|[259 ms](https://youtu.be/l75LKRjWaRQ)|ms|-|-|
+|ssd_mobilenet_v2_300x300_quant|-|-|[70 ms](https://youtu.be/t_nO3c12Bfc)|[7 ms](https://youtu.be/dQU08rlMRqE) [*1]<br>10 ms [*2]|
 |ssdlite_mobilenet_v3_small_320x320|[70 ms](https://youtu.be/MGd_jIkaZ3E)|ms|-|-|
 |ssdlite_mobilenet_v3_large_320x320|[209 ms](https://youtu.be/UweTO9GcCzM)|ms|-|-|
 |ssdlite_mobilenet_edgetpu_320x320|[553 ms](https://youtu.be/GnWSc0XF2IA)|ms|-|-|
@@ -32,12 +32,12 @@ Note: links are youtube url.
 ## Jetson Nano
 |Model Name|TF-TRT 16|
 |:--|--:|
-|ssd_mobilenet_v2_300x300|- [*3]|
+|ssd_mobilenet_v2_300x300|[46 ms](https://youtu.be/_glKPlVnTH8) [*3]|
 |ssdlite_mobilenet_v3_small_320x320|[24 ms](https://youtu.be/6rvksX_3SX0)|
 |ssdlite_mobilenet_v3_large_320x320|[41 ms](https://youtu.be/yNc51WBM4X)|
 |ssdlite_mobilenet_edgetpu_320x320|[38 ms](https://youtu.be/sOEp8RpWgSA)|
 
-[*3] Convert tf-trt fp16 model (wit force nms cpu) is failed. please check [my blog post](https://nextremer-nbo.blogspot.com/2020/02/jetson-nanotf-trtjetpack43.html). 
+[*3] Convert tf-trt fp16 model with force nms cpu is failed. please check [my blog post](https://nextremer-nbo.blogspot.com/2020/02/jetson-nanotf-trtjetpack43.html). 
 
 ## HW/SW
 - Raspberry Pi 4
