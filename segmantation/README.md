@@ -31,6 +31,18 @@ Note: links are youtube url.
 [*1] libedgetpu: libedgetpu1-max (maximum operating frequency)<br>
 [*2] libedgetpu: libedgetpu1-std (normal operating frequency)<br>
 
+## Jetson Nano
+|Model Name|TF-TRT 16(*3)|
+|:--|--:|
+|deeplabv3_mv2|[280 ms](https://youtu.be/_OUhB08SXRE)|
+|deeplabv3_mv2_dm05|[ms]()|
+|deeplab_mv3_large|[156 ms](https://youtu.be/aRaXwmslC30)|
+|deeplab_mv3_small|[92 ms](https://youtu.be/Fvzwmgx1FnQ)|
+|edgetpu_deeplab|[623 ms](https://youtu.be/TxhY8uaPCRo)|
+|edgetpu_deeplab_slim|[ms]()|
+
+[*3] Convert tf-trt fp16 model with is_dynamic_op=True.
+
 ## HW/SW
 - Raspberry Pi 4
     - Raspbian Buster (10.5)
@@ -40,6 +52,6 @@ Note: links are youtube url.
     - TensorflowLite: 1.5.1 ([PINTO0309/TensorflowLite-bin](https://github.com/PINTO0309/TensorflowLite-bin))
 
 - Jetson Nano
-    - JetPack 4.3
-    - TensorRT: 6.0.1
-    - TensorFlow: 1.15.0+nv20.1
+    - JetPack 4.4 Developer Preview
+    - TensorRT: x.x.x
+    - TensorFlow: 1.15.2+nvxx.x
